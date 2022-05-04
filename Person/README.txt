@@ -7,7 +7,7 @@ cmake --build build
 //execute command 
 cd build . ctest
 
-//generate code coverage
+//generate code coverage from inside WSL (Ubuntu prompt)
 cd build . make gcov
 
 //run individual tests by name
@@ -21,3 +21,4 @@ gcovr -r . --xml xmlfilename.xml
 //LCOV_EXCL_START
 #include "gtest/gtest.h"
 //LCOV_EXCL_STOP
+
